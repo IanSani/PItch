@@ -1,7 +1,7 @@
 """Relationship two comments
 Revision ID: 1978dfb2f581
 Revises: 32ec9e226498
-Create Date: 2018-09-08 14:30:31.416547
+Create Date: 2019-04-25 14:30:31.416547
 """
 from alembic import op
 import sqlalchemy as sa

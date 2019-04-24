@@ -1,7 +1,7 @@
 """title column in pitch
 Revision ID: 3671cace1aa7
 Revises: 91418a3b5b22
-Create Date: 2018-09-09 10:40:47.381851
+Create Date: 2019-04-25 10:40:47.381851
 """
 from alembic import op
 import sqlalchemy as sa
