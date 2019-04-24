@@ -1,13 +1,23 @@
 {% extends 'base.html'%}
-{% block styles%} {{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %}
-{% block content %}
+{%block content%}
 
 <body>
   <br>
+  <div class="jumbotron" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+  <div class="text-white text-center py-5 px-4 my-5">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Welcome to Pitch where you can change peoples mindset<br>then give a pitch on the best life practices</strong></h2>
+      <p class="mx-5 mb-5">
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
   <div class="d-flex justify-content-center">
     <div class="card-groups">
-      <div class="card border-info mb-3" style="max-width: 35rem;">
+      <div class="card border-info mb-3" style="max-width: 55rem;">
         <div class="card-header">Life</div>
         <div class="card-body text-info">
           <h5 class="card-title">Pitches about life</h5>
@@ -17,7 +27,8 @@
         </div>
       </div>
 
-      <div class="card border-info mb-3" style="max-width: 35rem;">
+
+      <div class="card border-info mb-3" style="max-width: 55rem;">
         <div class="card-header">Coding</div>
         <div class="card-body text-info">
           <h5 class="card-title">Pitches about coding</h5>
@@ -27,7 +38,7 @@
         </div>
       </div>
 
-      <div class="card border-info mb-3" style="max-width: 35rem;">
+      <div class="card border-info mb-3" style="max-width: 55rem;">
         <div class="card-header">Funny</div>
         <div class="card-body text-info">
           <h5 class="card-title">Funny Pitches</h5>
@@ -36,9 +47,29 @@
           <button type="button" class="btn btn-outline-primary"><a href="/categories/funny">Read Pitches</a></button>
         </div>
       </div>
+      </div>
 
     </div>
   </div>
+<div class="col-md-6">
+  <div class="embed-responsive embed-responsive-16by9" id="video">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Oy6S0iTZx54" allowfullscreen "></iframe>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 font-bold" id="fot">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Pitch.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
 
   {% endblock%}
 </body>
