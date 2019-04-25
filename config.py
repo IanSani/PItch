@@ -4,7 +4,7 @@ class Config:
 
     SECRET_KEY=('Ian')
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://ain:saniboy254@localhost/pitch'
-    # SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
     UPLOADED_PHOTOS_DEST ='app/static/photos'
@@ -43,12 +43,8 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    # SQLALCHEMY_DATABASE_URI =''
+    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://ain:saniboy254@localhost/pitch'
 
-class ProdConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get(" postgresql-polished-69398")
-
-    DEBUG = True
 
 config_options = {
 'development':DevConfig,
